@@ -12,11 +12,9 @@
 
 body {
   position: relative;
-  overflow-x: hidden;
-  background: linear-gradient(-45deg, #040fd9, #2540d9, #5267d9, #8995d9);
-  background-size: 300% 300%;
-  animation: gradient 10s ease infinite;
-  height: 100vh;
+  background-color: #5267d9;
+  /* #040fd9, #2540d9, #5267d9, #8995d9); */
+  z-index: -2;
 }
 
 main {
@@ -24,19 +22,4 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }

@@ -18,23 +18,26 @@ function Banner() {
 
   return (
     <div className="banner">
-      <span id="name">Theo Sannie</span>
-      <LoopPrompt
-        id="prompt"
-        base_prompt="I am a "
-        prompt_list={["Full Stack Developer", "Software Engineer"]}
-        loop_delay={6000}
-      />
-      <p id="description">
-        As a tech enthusiast, I create simple solutions to solve complex
-        problems.
-      </p>
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={options}
       />
+      <div className="banner__content">
+        <span className="name">Theo Sannie</span>
+        <LoopPrompt
+          base_prompt="I'm a "
+          list_prompt={["Full Stack Developer.", "Software Engineer."]}
+          prompt_icon="|"
+          loop_delay={6000}
+        />
+        <p id="description">
+          As a tech enthusiast, I create simple solutions to solve complex
+          problems.
+        </p>
+        <div className="particles_bg" />
+      </div>
     </div>
   );
 }
