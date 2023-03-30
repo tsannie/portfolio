@@ -2,7 +2,7 @@ const options = {
   fpsLimit: 60,
   fullScreen: {
     enable: true,
-    zIndex: 1,
+    zIndex: -1,
   },
   particles: {
     number: {
@@ -67,7 +67,7 @@ const options = {
     },
   },
   interactivity: {
-    detect_on: "canvas",
+    detect_on: "window",
     events: {
       onhover: {
         enable: true,
@@ -77,12 +77,15 @@ const options = {
     },
     modes: {
       grab: {
-        distance: 140,
+        distance: 200,
         line_linked: {
           opacity: 1,
         },
       },
     },
+  },
+  background: {
+    color: "#5267d9",
   },
   retina_detect: false,
   detectRetina: false,

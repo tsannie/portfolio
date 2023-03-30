@@ -6,6 +6,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import options from "./option";
 import "./main.scss";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -22,14 +23,15 @@ function App() {
     <body>
       <Header />
       <main>
+        <Banner />
+        <Presentation />
         <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={options}
         />
-        <Banner />
-        <Presentation />
+        <Projects />
       </main>
     </body>
   );
