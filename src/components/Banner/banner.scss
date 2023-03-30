@@ -26,13 +26,13 @@
   span {
     color: #d9d9d9;
 
-    font-family: "Roboto", sans-serif;
+    font-family: "Staatliches", cursive;
+    letter-spacing: 0.2rem;
     font-weight: 700;
   }
 
   p {
     color: #d9d9d9;
-    font-family: "Roboto", sans-serif;
     margin-top: 10px;
     font-size: 22px;
     max-width: 500px;
@@ -50,24 +50,4 @@
   flex-direction: column;
   justify-content: center;
   height: 50vh;
-}
-
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  backdrop-filter: blur(3px);
-}
-
-.particles_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  backdrop-filter: blur(3px);
 }

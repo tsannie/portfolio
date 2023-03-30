@@ -1,8 +1,8 @@
 const options = {
   fpsLimit: 60,
   fullScreen: {
-    enable: false,
-    zIndex: -1,
+    enable: true,
+    zIndex: 1,
   },
   particles: {
     number: {
@@ -63,6 +63,24 @@ const options = {
         enable: false,
         rotateX: 600,
         rotateY: 1200,
+      },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab",
+      },
+      resize: true,
+    },
+    modes: {
+      grab: {
+        distance: 140,
+        line_linked: {
+          opacity: 1,
+        },
       },
     },
   },
