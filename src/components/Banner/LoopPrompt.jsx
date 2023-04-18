@@ -43,7 +43,7 @@ function LoopPrompt({ list_prompt, base_prompt, loop_delay, prompt_icon }) {
         if (write) writeText();
         else deleteText();
       },
-      write ? Math.floor(Math.random() * 200) + 50 : 80
+      write ? Math.floor(Math.random() * 130) + 30 : 50
     );
 
     return () => clearTimeout(sleep);

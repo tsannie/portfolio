@@ -14,12 +14,9 @@ function Presentation() {
             42 Paris
           </a>
           , a school known for its practical and collaborative approach to
-          learning programming. I learned by doing a lot of{" "}
-          <a href="#projects" id="link">
-            projects
-          </a>{" "}
-          in several fields of computer science. I love learning new skills and
-          discovering new languages.
+          learning programming. I learned by doing a lot of projects in several
+          fields of computer science. I love learning new skills and discovering
+          new languages.
         </p>
         <p>
           However, I still have a preference for low-level languages. Indeed, I

@@ -4,9 +4,14 @@ import "../../main.scss";
 import projects_list from "../../assets/projects";
 
 function Projects() {
-  const projects = projects_list.map((project) => {
+  const sortedProjects = projects_list.sort((a, b) => b.year - a.year);
+  const projects = sortedProjects.map((project) => {
     return (
-      <div className="card">
+      <div
+        className="card"
+        key={project.name}
+        onClick={() => window.open(project.link)}
+      >
         <div className="card__img">
           <img src={project.image} alt="project" />
           <span>{project.year}</span>
@@ -20,8 +25,6 @@ function Projects() {
       </div>
     );
   });
-
-  console.log(projects);
 
   return (
     <div className="container">

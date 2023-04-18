@@ -1,6 +1,15 @@
 const projects_list = [
   {
-    name: "ft_transcendence",
+    name: "dslr",
+    description:
+      "Data Science x Logistic Regression, is a project that aims to analyze a data set and predict Hogwarts House.",
+    image:
+      "https://thumbs.gfycat.com/DependableNastyBedbug-size_restricted.gif",
+    link: "https://github.com/tsannie/dslr",
+    year: "2023",
+  },
+  {
+    name: "transcendence",
     description:
       "This project aims to create a web-based implementation of the classic game Pong.",
     image:
@@ -55,6 +64,15 @@ const projects_list = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wikimedia_Foundation_Servers-8055_35.jpg/2560px-Wikimedia_Foundation_Servers-8055_35.jpg",
     link: "https://github.com/tsannie/webserv",
     year: "2022",
+  },
+  {
+    name: "push_swap",
+    description:
+      "Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions.",
+    image:
+      "https://camo.githubusercontent.com/c270621dc9f17928a02ec3ac35c419458bb42fa4eec7df416971085fe9f99835/68747470733a2f2f692e696d6775722e636f6d2f4f5377386d66582e676966",
+    link: "https://github.com/tsannie/push_swap",
+    year: "2021",
   },
 ];
 
