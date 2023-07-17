@@ -1,5 +1,14 @@
 const projects_list = [
   {
+    name: "multilayer_perceptron",
+    description:
+      "Create a neural network from scratch in python using numpy. My project is inspired by Keras.",
+    image:
+      "https://camo.githubusercontent.com/0aaa8227707588c1710914dfd71a06397998fbce15e61861068b4580b84c373c/68747470733a2f2f692e696d6775722e636f6d2f313843434731792e706e67",
+    link: "https://github.com/tsannie/multilayer_perceptron",
+    year: "2023",
+  },
+  {
     name: "dslr",
     description:
       "Data Science x Logistic Regression, is a project that aims to analyze a data set and predict Hogwarts House.",

@@ -6,13 +6,21 @@ import React, { useEffect, useState } from "react";
  * base_prompt: string,
  * loop_delay: number,
  * prompt_icon: string
+ * start_delay: number
  * }} props
  * @returns {JSX.Element}
  */
-function LoopPrompt({ list_prompt, base_prompt, loop_delay, prompt_icon }) {
+function LoopPrompt({
+  list_prompt,
+  base_prompt,
+  loop_delay,
+  prompt_icon,
+  start_delay,
+}) {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [write, setWrite] = useState(true);
+  const [start, setStart] = useState(false);
 
   const writeText = () => {
     if (text.length < base_prompt.length) {
@@ -38,6 +46,7 @@ function LoopPrompt({ list_prompt, base_prompt, loop_delay, prompt_icon }) {
   };
 
   useEffect(() => {
+    if (!start) return;
     const sleep = setTimeout(
       () => {
         if (write) writeText();
@@ -47,7 +56,12 @@ function LoopPrompt({ list_prompt, base_prompt, loop_delay, prompt_icon }) {
     );
 
     return () => clearTimeout(sleep);
-  }, [text, write]);
+  }, [text, write, start]);
+
+  useEffect(() => {
+    const sleep = setTimeout(() => setStart(true), start_delay);
+    return () => clearTimeout(sleep);
+  }, []);
 
   return (
     <div className="loop-prompt">

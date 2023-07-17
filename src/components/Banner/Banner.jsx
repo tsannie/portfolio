@@ -9,11 +9,17 @@ function Banner() {
         <span className="name">Theo Sannie</span>
         <LoopPrompt
           base_prompt="I'm a "
-          list_prompt={["Full Stack Developer.", "Software Engineer."]}
+          list_prompt={[
+            "Software Engineer.",
+            "AI Enthusiast.",
+            "Full Stack Developer.",
+            "Tech Enthusiast.",
+          ]}
           prompt_icon="|"
-          loop_delay={4000}
+          loop_delay={2000}
+          start_delay={2700}
         />
-        <p id="description">
+        <p className="description">
           As a tech enthusiast, I create simple solutions to solve complex
           problems.
         </p>

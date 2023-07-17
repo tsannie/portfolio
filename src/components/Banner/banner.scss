@@ -15,12 +15,27 @@
 
   .name {
     font-size: clamp(0.5rem, 10vw, 6rem);
+    animation: fade-in-down 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  .description {
+    animation: fade-in-down 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
   }
 
   .loop-prompt {
     flex: 0 1 28%;
     font-size: clamp(0.5rem, 8vw, 4rem);
     margin-top: 20px;
+    animation: fade-in-down 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
 
     @media screen and (max-width: 768px) {
       flex: 0 1 30%;
@@ -66,4 +81,15 @@
   flex-direction: column;
   justify-content: center;
   height: 50vh;
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
