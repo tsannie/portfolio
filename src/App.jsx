@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Banner from "./components/Banner/Banner";
 import Presentation from "./components/Presentation/Presentation";
 import Particles from "react-particles";

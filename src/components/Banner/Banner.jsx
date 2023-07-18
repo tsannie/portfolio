@@ -11,12 +11,12 @@ function Banner() {
           base_prompt="I'm a "
           list_prompt={[
             "Software Engineer.",
-            "AI Enthusiast.",
+            "Machine Learning Enthusiast.",
             "Full Stack Developer.",
             "Tech Enthusiast.",
           ]}
           prompt_icon="|"
-          loop_delay={2000}
+          loop_delay={1000}
           start_delay={2700}
         />
         <p className="description">

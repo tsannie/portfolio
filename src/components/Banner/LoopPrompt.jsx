@@ -63,6 +63,12 @@ function LoopPrompt({
     return () => clearTimeout(sleep);
   }, []);
 
+  useEffect(() => {
+    const shuffled_list_prompt = list_prompt.sort(() => Math.random() - 0.5);
+    setIndex(shuffled_list_prompt.indexOf(list_prompt[index]));
+    list_prompt = shuffled_list_prompt;
+  }, []);
+
   return (
     <div className="loop-prompt">
       <span id="base_prompt">{text.slice(0, base_prompt.length)}</span>
