@@ -1,5 +1,14 @@
 const projects_list = [
   {
+    name: "Leaffliction",
+    description:
+      "Here, I perform the analysis, augmentation and transformation of a leaf dataset. After image classification using a Convolutional Neural Network.",
+    image:
+      "https://camo.githubusercontent.com/4a40452bf14786ccfb502f5524574fb593536bff9d06bd3c0a5c14d232646131/68747470733a2f2f692e696d6775722e636f6d2f59734d697936422e676966",
+    link: "https://github.com/arlaine4/Leaffliction",
+    year: "2023",
+  },
+  {
     name: "multilayer_perceptron",
     description:
       "Create a neural network from scratch in python using numpy. My project is inspired by Keras.",
