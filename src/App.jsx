@@ -1,12 +1,13 @@
-import { useCallback, useEffect } from "react";
-import Banner from "./components/Banner/Banner";
-import Presentation from "./components/Presentation/Presentation";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import options from "./option";
-import "./main.scss";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
+import { useCallback, useEffect } from 'react';
+import Banner from './components/Banner/Banner';
+import Presentation from './components/Presentation/Presentation';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
+import options from './option';
+import './main.scss';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Experiences from './components/Experiences/Experiences';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -21,14 +22,10 @@ function App() {
 
   return (
     <main>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={options}
-      />
+      <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options} />
       <Banner />
       <Presentation />
+      <Experiences />
       <Projects />
       <Contact />
     </main>
